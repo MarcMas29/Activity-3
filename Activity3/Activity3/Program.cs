@@ -102,7 +102,7 @@
             }
             else if (questionNum == 5)
             {
-                Console.WriteLine("Digues quants mars hi han al mon.");
+                Console.WriteLine("Digues quants oceans hi han al mon.");
                 Console.WriteLine("a. 3");
                 Console.WriteLine("b. 5");
                 Console.WriteLine("c. 4");

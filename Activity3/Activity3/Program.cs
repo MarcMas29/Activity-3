@@ -37,6 +37,8 @@
     }
     public static void ShowOptions()
     {
+        Console.WriteLine("Choose one topic");
+
         Console.WriteLine("1- Geography");
         Console.WriteLine("2- History");
         Console.WriteLine("3- Science");
@@ -48,11 +50,26 @@
     }
     public static void Geography()
     {
-        char a, b, c, d;
-        Console.WriteLine("");
+        int questionNum;
+        Console.WriteLine("Digues un num del 1 - 5");
+        questionNum = Convert.ToInt32(Console.ReadLine());
         try
         {
-            
+            if (questionNum == 1)
+            {
+                char answer;
+                Console.WriteLine("Quina es la capital d'Espanya");
+                Console.WriteLine("a. Madrid");
+                Console.WriteLine("b. Oslo");
+                Console.WriteLine("c. Barcelona");
+                Console.WriteLine("d. Berlin");
+                answer = Convert.ToChar(Console.ReadLine());
+                if (answer == 'a') Console.WriteLine("Good job you guessed correctly");
+                else Console.WriteLine("Wrong answer try again");
+                
+
+
+            }
         }
         catch (Exception e)
         {
@@ -63,4 +80,6 @@
             MsgNextScreen("PRESS A KEY TO GO TO THE MAIN MENU");
         }
     }
+
+
 }
